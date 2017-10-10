@@ -5,6 +5,178 @@
 @grey: grey;
 @black: black;
 @white: white;
+@keyframes green-button {
+  0% {background-color: @green;}
+  100% {background-color: @white;}
+}
+@keyframes red-button {
+  0% {background-color: @red;}
+  100% {background-color: @white;}
+}
+@keyframes blue-button {
+  0% {background-color: @blue;}
+  100% {background-color: @white;}
+}
+@keyframes grey-button {
+  0% {background-color: @grey;}
+  100% {background-color: @white;}
+}
+@keyframes black-button {
+  0% {background-color: @black;}
+  100% {background-color: @white; color: @black;}
+}
+@keyframes white-button {
+  0% {background-color: @white;}
+  100% {background-color: @black; color: @white;}
+}
+.button-green {
+  width: 7%;
+  height: 5%;
+  background-color: @green;
+  border-color: @black;
+  border-width: 1px;
+  border-radius: 15px;
+}
+.button-green:hover {
+  animation-name: green-button;
+  animation-duration: 1s;
+}
+.button-black {
+  width: 7%;
+  height: 5%;
+  background-color: @black;
+  border-color: @white;
+  border-width: 1px;
+  color: white;
+  border-radius: 15px;
+}
+.button-black:hover {
+  animation-name: black-button;
+  animation-duration: 1s;
+}
+.button-blue {
+  width: 7%;
+  height: 5%;
+  background-color: @blue;
+  border-color: @black;
+  border-width: 1px;
+  border-radius: 15px;
+}
+.button-blue:hover {
+  animation-name: blue-button;
+  animation-duration: 1s;
+}
+.button-red {
+  width: 7%;
+  height: 5%;
+  background-color: @red;
+  border-color: @black;
+  border-width: 1px;
+  border-radius: 15px;
+}
+.button-red:hover {
+  animation-name: red-button;
+  animation-duration: 1s;
+}
+.button-grey {
+  width: 7%;
+  height: 5%;
+  background-color: @grey;
+  border-color: @black;
+  border-width: 1px;
+  border-radius: 15px;
+}
+.button-grey:hover {
+  animation-name: grey-button;
+  animation-duration: 1s;
+}
+.button-white {
+  width: 7%;
+  height: 5%;
+  background-color: @white;
+  border-color: @black;
+  border-width: 1px;
+  border-radius: 15px;
+}
+.article-body-red {
+  border: solid;
+  border-color: @red;
+  border-width: 1px;
+  width: 40%;
+  height: 50%;
+  color: @red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-body-green {
+  border: solid;
+  border-color: @green;
+  border-width: 1px;
+  width: 40%;
+  height: 50%;
+  color: @green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-body-blue {
+  border: solid;
+  border-color: @blue;
+  border-width: 1px;
+  width: 40%;
+  height: 50%;
+  color: @blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-body-grey {
+  border: solid;
+  border-color: @grey;
+  border-width: 1px;
+  width: 40%;
+  height: 50%;
+  color: @grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-body-black {
+  border: solid;
+  border-color: @black;
+  border-width: 1px;
+  width: 40%;
+  height: 50%;
+  color: @black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-body-white {
+  border: solid;
+  border-color: @white;
+  border-width: 1px;
+  width: 40%;
+  height: 50%;
+  color: @white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-body p {
+  text-align: center;
+}
+.article-body button {
+  margin-bottom: 5px;
+}
+.title-article {
+  text-align: center;
+}
+.button-white:hover {
+  animation-name: white-button;
+  animation-duration: 1s;
+}
 .flex-container-full {
   display: flex;
   margin: 0;

@@ -1,0 +1,75 @@
+Pour ajouter un menu vertical :
+  <aside class="menu-vertical bg-black color-red">
+  <h1 class="artiste-red">Nom de l'artiste</h1><br />
+  <img src="./visage.jpg" />
+  <ul>
+    <li><a href="#" alt="">Accueil</a></li>
+    <li><a href="#" alt="">MES PHOTOS</a></li>
+    <li><a href="#" alt="">MES TARIFS</a></li>
+    <li><a href="#" alt="">CONTACT</a></li>
+  </ul>
+  </aside>
+Pour modifier la couleur du background vous pouvez ajouter en parametre d'une classe:
+Pour un fond de couleur noir
+  class="bg-black"
+Pour un fond de couleur rouge
+  class="bg-red"
+Pour un fond de couleur gris
+  class="bg-grey"
+Pour un fond de couleur bleu
+  class="bg-blue"
+Pour un fond de couleur blanc
+class="bg-white"
+
+Pour modifier la couleur d'un texte vous pouvez rajouter en paramètre d'une classe :
+Pour une couleur noir
+  class="color-black"
+Pour une couleur rouge
+  class="color-rouge"
+Pour une couleur grise
+  class="color-grey"
+Pour une couleur verte
+  class="color-green"
+Pour une couleur bleu
+  class="color-blue"
+
+Pour activer la background image dans le body, vous pouvez rajouter en parametre de la classe :
+on
+Vous pouvez modifiez la taille du fond, avec les paramètres suivant:
+Pour une plein ecran
+bg-size-full
+Pour une taille moyenne
+bg-size-medium
+Pour une taille petite
+bg-size-small
+
+Pour ajouter un bouton:
+Pour un bouton rouge :
+<button class="button-red">Bouton</button>
+Pour un bouton noir :
+<button class="button-black">Bouton</button>
+Pour un bouton vert :
+<button class="button-green">Bouton</button>
+Pour un bouton bleu :
+<button class="button-bleu">Bouton</button>
+Pour un bouton gris :
+<button class="button-grey">Bouton</button>
+Pour un bouton blanc :
+<button class="button-white">Bouton</button>
+
+Pour ajouter un article :
+<article class="article-body-red">
+  <h1 class="title-article">MON TITRE</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <button class="button-red">Bouton</button>
+</article>
+Pour un article rouge, il faut utiliser ce paramètre :
+<article class="article-body-red">
+Pour un article noir, il faut utiliser ce paramètre :
+<article class="article-body-black">
+Pour un article blanc, il faut utiliser ce paramètre :
+<article class="article-body-white">
+Pour un article vert, il faut utiliser ce paramètre :
+<article class="article-body-green">
+Pour un article bleu, il faut utiliser ce paramètre :
+<article class="article-body-blue">
