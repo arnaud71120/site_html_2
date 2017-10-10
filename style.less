@@ -1,0 +1,144 @@
+// out: ./styles.css, sourcemap: false, compress: false
+@blue: blue;
+@red: red;
+@green: green;
+@grey: grey;
+@black: black;
+@white: white;
+.flex-container-full {
+  display: flex;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.flex-container-medium {
+  display: flex;
+  margin: 0 auto;
+  width: 75vw;
+  height: 75vh;
+}
+.flex-container-small {
+  display: flex;
+  margin: 0 auto;
+  width: 50vw;
+  height: 50vh;
+}
+.menu-vertical{
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-vertical ul li {
+  list-style: none;
+  padding-top: 20%;
+}
+.menu-vertical ul {
+  list-style: none;
+  border-top: 1px solid white;
+  padding-left: 0;
+}
+.menu-vertical img {
+  width: 50%;
+  height: 10%;
+  border-radius: 100%;
+}
+.menu-vertical ul li a {
+  text-decoration: none;
+}
+.menu-vertical ul li a:visited{
+
+}
+.body80 {
+
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.on {
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+}
+.color-black {
+  color: @black;
+}
+.color-red {
+  color: @red;
+}
+.color-gree {
+  color: @green;
+}
+.color-blue {
+  color: @blue;
+}
+.color-grey {
+  color: @grey;
+}
+.color-white {
+  color: @white;
+}
+.bg-black {
+  background-color: @black;
+}
+.bg-blue {
+  background-color: @blue;
+}
+.bg-red {
+  background-color: @red;
+}
+.bg-green {
+  background-color: @green;
+}
+.bg-grey {
+  background-color: @grey;
+}
+.bg-white {
+  background-color: @@white;
+}
+.bg-size-small {
+  background-size: 50%;
+}
+.bg-size-medium {
+  background-size: 75%;
+}
+.bg-size-full {
+  background-size: cover;
+}
+.bg-center {
+  background-position: center;
+  width: 100%;
+}
+.bg-right {
+  background-position: right;
+}
+.bg-left {
+  background-position: left;
+}
+.artiste-blue {
+  color: @blue;
+}
+.artiste-red {
+  color: @red;
+}
+.artiste-green {
+  color: @green;
+}
+.artiste-grey {
+  color: @grey;
+}
+.artiste-white {
+  color: @grey;
+}
+.title{
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
