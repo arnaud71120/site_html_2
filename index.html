@@ -6,13 +6,15 @@
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mon site</title>
   </head>
   <body class="flex-container-full" >
-    <aside class="menu-vertical bg-black color-red">
+    <aside id="navBar" class="menu-vertical bg-black">
+      <h2 id="btn-menu">Menu</h2>
       <h2 class="artiste-red">Nom de l'artiste</h2><br />
-      <img src="./visage.jpg" alt="portrait"/>
-      <ul>
+      <img src="./images/visage.jpg" alt="portrait"/>
+      <ul id="top-nav">
         <li><a class="color-red" href="#" >Accueil</a></li>
         <li><a class="color-red" href="#" >MES PHOTOS</a></li>
         <li><a class="color-red" href="#" >MES TARIFS</a></li>
@@ -20,34 +22,44 @@
       </ul>
     </aside>
     <main class="on bg-center bg-size-full">
+      <i id="navBar-button" class="fa fa-chevron-left fa-3x" aria-hidden="true" style="width: 100%;" ></i>
       <article class="article article-center">
         <h1 class="title color-blue">QUI SUIS-JE?</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="slider">
+           <i id="navSlide-button-left" class="fa fa-chevron-left fa-3x" aria-hidden="true" style="width: 100%;" ></i>
+          <img id="photo1" alt="photo1" class="noHidden" src="./images/photo1.jpg" />
+          <img id="photo2" alt="photo2" class="hidden" src="./images/photo2.jpg" />
+          <img id="photo3" alt="photo3" class="hidden" src="./images/photo3.jpg" />
+          <img id="photo4" alt="photo4" class="hidden" src="./images/photo4.jpg" />
+        <i id="navSlide-button-right" class="fa fa-chevron-right fa-3x" aria-hidden="true" style="width: 100%;" ></i>
+      </div>
       </article>
       <div class="allArticle">
         <article class="article-body-blue bg-grey">
           <h2 class="title-article">MON TITRE</h2>
-          <img src="./photo1.jpg" alt="image1"/>
+          <img src="./images/photo1.jpg" alt="image1"/>
           <hr class="classhr">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <button class="button-blue">Bouton</button>
         </article>
         <article class="article-body-red bg-grey">
           <h2 class="title-article">MON TITRE</h2>
-          <img src="./photo2.jpg" alt="image2"/>
+          <img src="./images/photo2.jpg" alt="image2"/>
           <hr class="classhr">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <button class="button-red">Bouton</button>
         </article>
         <article class="article-body-green bg-grey">
           <h2 class="title-article">MON TITRE</h2>
-          <img src="./photo2.jpg" alt="image2"/>
+          <img src="./images/photo2.jpg" alt="image2"/>
           <hr class="classhr">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <button class="button-green">Bouton</button>
         </article>
       </div>
     </main>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -8,29 +8,54 @@
 @fontLora: 'Lora', serif;
 @fontOpen: 'Open Sans Condensed', serif;
 @fontPlayfair: 'Playfair Display', serif;
+
 @keyframes green-button {
-  0% {background-color: @green;}
-  100% {background-color: @white; color: @black;}
+  0% {
+    background-color: @green;
+  }
+  100% {
+    background-color: @white; color: @black;
+  }
 }
 @keyframes red-button {
-  0% {background-color: @red;}
-  100% {background-color: @white; color: @black;}
+  0% {
+    background-color: @red;
+  }
+  100% {
+    background-color: @white; color: @black;
+  }
 }
 @keyframes blue-button {
-  0% {background-color: @blue;}
-  100% {background-color: @white; color: @black;}
+  0% {
+    background-color: @blue;
+  }
+  100% {
+    background-color: @white; color: @black;
+  }
 }
 @keyframes grey-button {
-  0% {background-color: @grey;}
-  100% {background-color: @white;}
+  0% {
+    background-color: @grey;
+  }
+  100% {
+    background-color: @white;
+  }
 }
 @keyframes black-button {
-  0% {background-color: @black;}
-  100% {background-color: @white; color: @black;}
+  0% {
+    background-color: @black;
+  }
+  100% {
+    background-color: @white; color: @black;
+  }
 }
 @keyframes white-button {
-  0% {background-color: @white;}
-  100% {background-color: @black; color: @white;}
+  0% {
+    background-color: @white;
+  }
+  100% {
+    background-color: @black; color: @white;
+  }
 }
 
 .classhr {
@@ -167,7 +192,7 @@
 }
 .article-body-red {
   .red-border;
-  width: 40%;
+  width: 20%;
   height: 50%;
   color: @red;
   display: flex;
@@ -175,7 +200,7 @@
   align-items: center;
   font-family: @fontLora;
   margin: 1%;
-  min-height: 700px;
+  min-height: 500px;
 }
 .article-body-red img {
   width: 70%;
@@ -186,7 +211,7 @@
 }
 .article-body-green {
   .green-border;
-  width: 40%;
+  width: 20%;
   height: 50%;
   color: @green;
   display: flex;
@@ -194,7 +219,7 @@
   align-items: center;
   font-family: @fontLora;
   margin: 1%;
-  min-height: 700px;
+  min-height: 500px;
 }
 .article-body-green img {
   width: 70%;
@@ -205,7 +230,7 @@
 }
 .article-body-blue {
   .blue-border;
-  width: 40%;
+  width: 20%;
   height: 50%;
   color: @blue;
   display: flex;
@@ -213,7 +238,7 @@
   align-items: center;
   font-family: @fontLora;
   margin: 1%;
-  min-height: 700px;
+  min-height: 500px;
 }
 .article-body-blue img {
   width: 70%;
@@ -224,7 +249,7 @@
 }
 .article-body-grey {
   .grey-border;
-  width: 40%;
+  width: 20%;
   height: 50%;
   color: @grey;
   display: flex;
@@ -232,7 +257,7 @@
   align-items: center;
   font-family: @fontLora;
   margin: 1%;
-  min-height: 700px;
+  min-height: 500px;
 }
 .article-body-grey p {
   text-align: : center;
@@ -241,9 +266,25 @@
 .article-body-grey img {
   width: 70%;
 }
+.slider {
+  width: 44vw;
+  height: 44vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+.slider img {
+  width: 44vw;
+  height: 44vh;
+}
+
 .article-body-black {
   .black-border;
-  width: 40%;
+  width: 20%;;
   height: 50%;
   color: @black;
   display: flex;
@@ -251,7 +292,7 @@
   align-items: center;
   font-family: @fontLora;
   margin: 1%;
-  min-height: 700px;
+  min-height: 500px;
 }
 .article-body-black p {
   text-align: : center;
@@ -262,7 +303,7 @@
 }
 .article-body-white {
   .white-border;
-  width: 40%;
+  width: 20%;;
   height: 50%;
   color: @white;
   display: flex;
@@ -274,7 +315,7 @@
 .article-body-white p {
   text-align: : center;
   padding: 10%;
-  min-height: 300px;
+  min-height: 500px;
 }
 .article-body-white img {
   width: 70%;
@@ -296,7 +337,7 @@
   display: flex;
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 .flex-container-medium {
   display: flex;
@@ -316,6 +357,9 @@
   flex-direction: column;
   align-items: center;
   font-family: @fontOpen;
+}
+.hidden {
+  display: none;
 }
 .menu-vertical ul li {
   list-style: none;
@@ -354,7 +398,7 @@
   text-align: right;
 }
 .on {
-  background-image: url('./background.jpg');
+  background-image: url('./images/background.jpg');
   background-repeat: no-repeat;
 }
 .color-black {

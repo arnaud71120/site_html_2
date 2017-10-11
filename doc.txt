@@ -1,14 +1,18 @@
 Pour ajouter un menu vertical :
-<aside class="menu-vertical bg-black color-red">
+<aside id="navBar" class="menu-vertical bg-black">
   <h2 class="artiste-red">Nom de l'artiste</h2><br />
   <img src="./visage.jpg" alt="portrait"/>
-  <ul>
+  <ul id="top-nav">
     <li><a class="color-red" href="#" >Accueil</a></li>
     <li><a class="color-red" href="#" >MES PHOTOS</a></li>
     <li><a class="color-red" href="#" >MES TARIFS</a></li>
     <li><a class="color-red" href="#" >CONTACT</a></li>
   </ul>
 </aside>
+Pour modifier l'image du menu, vous devez ajouter dans le dossier images, une image nommé visage.jpg
+Pour rendre le menu déroulant :
+Ajouter dans la balise aside
+  <h2 id="btn-menu">Menu</h2>
 Pour modifier la couleur du background vous pouvez ajouter en parametre d'une classe:
 Pour un fond de couleur noir
   class="bg-black"
@@ -35,8 +39,9 @@ Pour une couleur verte
 Pour une couleur bleu
   class="color-blue"
 
-Pour activer la background image dans le body, vous pouvez rajouter en parametre de la classe :
+Pour activer la background image dans le body, vous pouvez rajouter en parametre de la classe du main:
 on
+Pour mettre une photo en fond du background, vous devez ajouter dans le dossier image une image nommé background.jpg
 Vous pouvez modifiez la taille du fond, avec les paramètres suivant:
 Pour une plein ecran
 bg-size-full
@@ -59,13 +64,13 @@ Pour un bouton gris :
 Pour un bouton blanc :
 <button class="button-white">Bouton</button>
 
-Pour ajouter un article :
-<article class="article-body-red bg-grey">
+Pour ajouter un article, il faut mettre dans la div allArticle :
+<article class="article-body-blue bg-grey">
   <h2 class="title-article">MON TITRE</h2>
-  <img src="./photo2.jpg" alt="image2"/>
+  <img src="./images/photo1.jpg" alt="image1"/>
   <hr class="classhr">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <button class="button-red">Bouton</button>
+  <button class="button-blue">Bouton</button>
 </article>
 Pour un article rouge, il faut utiliser ce paramètre :
 <article class="article-body-red bg-grey">
@@ -77,3 +82,17 @@ Pour un article vert, il faut utiliser ce paramètre :
 <article class="article-body-green bg-grey">
 Pour un article bleu, il faut utiliser ce paramètre :
 <article class="article-body-blue bg-grey">
+
+Pour ajouter un slider, il faut ajouter (attention, il faut qu'elle contiennent 4 photos dans le dossier images.
+Elles doivent être nommées: photo1, photo2, photo3, photo4) :
+<div class="slider">
+   <i id="navSlide-button-left" class="fa fa-chevron-left fa-3x" aria-hidden="true" style="width: 100%;" ></i>
+  <img id="photo1" alt="photo1" class="noHidden" src="./images/photo1.jpg" />
+  <img id="photo2" alt="photo2" class="hidden" src="./images/photo2.jpg" />
+  <img id="photo3" alt="photo3" class="hidden" src="./images/photo3.jpg" />
+  <img id="photo4" alt="photo4" class="hidden" src="./images/photo4.jpg" />
+<i id="navSlide-button-right" class="fa fa-chevron-right fa-3x" aria-hidden="true" style="width: 100%;" ></i>
+</div>
+
+Pour rendre le menu vertical rétractable, il faut ajouter en début de la balise main :
+  <i id="navBar-button" class="fa fa-chevron-left fa-3x" aria-hidden="true" style="width: 100%;" ></i>
