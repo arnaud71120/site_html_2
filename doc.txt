@@ -1,14 +1,14 @@
 Pour ajouter un menu vertical :
-  <aside class="menu-vertical bg-black color-red">
-  <h1 class="artiste-red">Nom de l'artiste</h1><br />
-  <img src="./visage.jpg" />
+<aside class="menu-vertical bg-black color-red">
+  <h2 class="artiste-red">Nom de l'artiste</h2><br />
+  <img src="./visage.jpg" alt="portrait"/>
   <ul>
-    <li><a href="#" alt="">Accueil</a></li>
-    <li><a href="#" alt="">MES PHOTOS</a></li>
-    <li><a href="#" alt="">MES TARIFS</a></li>
-    <li><a href="#" alt="">CONTACT</a></li>
+    <li><a class="color-red" href="#" >Accueil</a></li>
+    <li><a class="color-red" href="#" >MES PHOTOS</a></li>
+    <li><a class="color-red" href="#" >MES TARIFS</a></li>
+    <li><a class="color-red" href="#" >CONTACT</a></li>
   </ul>
-  </aside>
+</aside>
 Pour modifier la couleur du background vous pouvez ajouter en parametre d'une classe:
 Pour un fond de couleur noir
   class="bg-black"
@@ -18,6 +18,8 @@ Pour un fond de couleur gris
   class="bg-grey"
 Pour un fond de couleur bleu
   class="bg-blue"
+Pour un fond de couleur vert
+  class="bg-green"
 Pour un fond de couleur blanc
 class="bg-white"
 
@@ -58,18 +60,20 @@ Pour un bouton blanc :
 <button class="button-white">Bouton</button>
 
 Pour ajouter un article :
-<article class="article-body-red">
-  <h1 class="title-article">MON TITRE</h1>
+<article class="article-body-red bg-grey">
+  <h2 class="title-article">MON TITRE</h2>
+  <img src="./photo2.jpg" alt="image2"/>
+  <hr class="classhr">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <button class="button-red">Bouton</button>
 </article>
 Pour un article rouge, il faut utiliser ce paramètre :
-<article class="article-body-red">
+<article class="article-body-red bg-grey">
 Pour un article noir, il faut utiliser ce paramètre :
-<article class="article-body-black">
+<article class="article-body-black bg-grey">
 Pour un article blanc, il faut utiliser ce paramètre :
-<article class="article-body-white">
+<article class="article-body-white bg-grey">
 Pour un article vert, il faut utiliser ce paramètre :
-<article class="article-body-green">
+<article class="article-body-green bg-grey">
 Pour un article bleu, il faut utiliser ce paramètre :
-<article class="article-body-blue">
+<article class="article-body-blue bg-grey">

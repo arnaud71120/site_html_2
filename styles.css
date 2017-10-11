@@ -1,9 +1,10 @@
 @keyframes green-button {
   0% {
-    background-color: green;
+    background-color: darkgreen;
   }
   100% {
     background-color: white;
+    color: black;
   }
 }
 @keyframes red-button {
@@ -12,19 +13,21 @@
   }
   100% {
     background-color: white;
+    color: black;
   }
 }
 @keyframes blue-button {
   0% {
-    background-color: blue;
+    background-color: darkblue;
   }
   100% {
     background-color: white;
+    color: black;
   }
 }
 @keyframes grey-button {
   0% {
-    background-color: grey;
+    background-color: lightgrey;
   }
   100% {
     background-color: white;
@@ -48,85 +51,251 @@
     color: white;
   }
 }
+.classhr {
+  border-top: 1px solid black;
+  width: 90%;
+  margin-top: 5%;
+}
+.black-border {
+  border: 1px solid black;
+}
+.red-border {
+  border: 1px solid red;
+}
+.green-border {
+  border: 1px solid darkgreen;
+}
+.blue-border {
+  border: 1px solid darkblue;
+}
+.white-border {
+  border: 1px solid white;
+}
+.grey-border {
+  border: 1px solid lightgrey;
+}
+.allArticle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+}
 .button-green {
-  width: 7%;
-  height: 5%;
-  background-color: green;
+  width: 15%;
+  height: 15%;
+  background-color: darkgreen;
   border-color: black;
   border-width: 1px;
   border-radius: 15px;
+  margin: 5%;
+  color: white;
 }
 .button-green:hover {
   animation-name: green-button;
+  background-color: white;
+  color: black;
   animation-duration: 1s;
 }
 .button-black {
-  width: 7%;
-  height: 5%;
+  width: 15%;
+  height: 15%;
   background-color: black;
   border-color: white;
   border-width: 1px;
   color: white;
   border-radius: 15px;
+  margin: 5%;
 }
 .button-black:hover {
   animation-name: black-button;
+  background-color: white;
+  color: black;
   animation-duration: 1s;
 }
 .button-blue {
-  width: 7%;
-  height: 5%;
-  background-color: blue;
+  width: 15%;
+  height: 15%;
+  background-color: darkblue;
   border-color: black;
   border-width: 1px;
   border-radius: 15px;
+  margin: 5%;
+  color: white;
 }
 .button-blue:hover {
   animation-name: blue-button;
+  background-color: white;
+  color: black;
   animation-duration: 1s;
 }
 .button-red {
-  width: 7%;
-  height: 5%;
+  width: 15%;
+  height: 15%;
   background-color: red;
   border-color: black;
   border-width: 1px;
   border-radius: 15px;
+  margin: 5%;
+  color: white;
 }
 .button-red:hover {
   animation-name: red-button;
+  background-color: white;
+  color: black;
   animation-duration: 1s;
 }
 .button-grey {
-  width: 7%;
-  height: 5%;
-  background-color: grey;
+  width: 15%;
+  height: 15%;
+  background-color: lightgrey;
   border-color: black;
   border-width: 1px;
   border-radius: 15px;
+  margin: 5%;
 }
 .button-grey:hover {
   animation-name: grey-button;
+  background-color: white;
+  color: black;
   animation-duration: 1s;
 }
 .button-white {
-  width: 7%;
-  height: 5%;
+  width: 15%;
+  height: 15%;
   background-color: white;
   border-color: black;
   border-width: 1px;
   border-radius: 15px;
+  margin: 5%;
 }
-.article-body {
-  border: solid;
-  border-color: red;
+.button-hover {
+  width: 15%;
+  height: 15%;
+  background-color: white;
+  border-color: black;
   border-width: 1px;
+  border-radius: 15px;
+  margin: 5%;
+}
+.button-grey:hover {
+  animation-name: white-button;
+  background-color: black;
+  color: white;
+  animation-duration: 1s;
+}
+.article-body-red {
+  border: 1px solid red;
   width: 40%;
   height: 50%;
   color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Lora', serif;
+  margin: 1%;
+  min-height: 700px;
+}
+.article-body-red img {
+  width: 70%;
+}
+.article-body-red p {
+  text-align: : center;
+  padding: 10%;
+}
+.article-body-green {
+  border: 1px solid darkgreen;
+  width: 40%;
+  height: 50%;
+  color: darkgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lora', serif;
+  margin: 1%;
+  min-height: 700px;
+}
+.article-body-green img {
+  width: 70%;
+}
+.article-body-green p {
+  text-align: : center;
+  padding: 10%;
+}
+.article-body-blue {
+  border: 1px solid darkblue;
+  width: 40%;
+  height: 50%;
+  color: darkblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lora', serif;
+  margin: 1%;
+  min-height: 700px;
+}
+.article-body-blue img {
+  width: 70%;
+}
+.article-body-blue p {
+  text-align: : center;
+  padding: 10%;
+}
+.article-body-grey {
+  border: 1px solid lightgrey;
+  width: 40%;
+  height: 50%;
+  color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lora', serif;
+  margin: 1%;
+  min-height: 700px;
+}
+.article-body-grey p {
+  text-align: : center;
+  padding: 10%;
+}
+.article-body-grey img {
+  width: 70%;
+}
+.article-body-black {
+  border: 1px solid black;
+  width: 40%;
+  height: 50%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lora', serif;
+  margin: 1%;
+  min-height: 700px;
+}
+.article-body-black p {
+  text-align: : center;
+  padding: 10%;
+}
+.article-body-black img {
+  width: 70%;
+}
+.article-body-white {
+  border: 1px solid white;
+  width: 40%;
+  height: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lora', serif;
+  margin: 1%;
+}
+.article-body-white p {
+  text-align: : center;
+  padding: 10%;
+  min-height: 300px;
+}
+.article-body-white img {
+  width: 70%;
 }
 .article-body p {
   text-align: center;
@@ -164,6 +333,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Open Sans Condensed', serif;
 }
 .menu-vertical ul li {
   list-style: none;
@@ -181,6 +351,10 @@
 }
 .menu-vertical ul li a {
   text-decoration: none;
+}
+.menu-vertical ul li:hover a {
+  background-color: white;
+  color: black;
 }
 .center {
   text-align: center;
@@ -201,14 +375,14 @@
 .color-red {
   color: red;
 }
-.color-gree {
-  color: green;
+.color-green {
+  color: darkgreen;
 }
 .color-blue {
-  color: blue;
+  color: darkblue;
 }
 .color-grey {
-  color: grey;
+  color: lightgrey;
 }
 .color-white {
   color: white;
@@ -217,16 +391,16 @@
   background-color: black;
 }
 .bg-blue {
-  background-color: blue;
+  background-color: darkblue;
 }
 .bg-red {
   background-color: red;
 }
 .bg-green {
-  background-color: green;
+  background-color: darkgreen;
 }
 .bg-grey {
-  background-color: grey;
+  background-color: lightgrey;
 }
 .bg-white {
   background-color: white;
@@ -251,19 +425,24 @@
   background-position: left;
 }
 .artiste-blue {
-  color: blue;
+  color: darkblue;
+  font-family: 'Open Sans Condensed', serif;
 }
 .artiste-red {
   color: red;
+  font-family: 'Open Sans Condensed', serif;
 }
 .artiste-green {
-  color: green;
+  color: darkgreen;
+  font-family: 'Open Sans Condensed', serif;
 }
 .artiste-grey {
-  color: grey;
+  color: lightgrey;
+  font-family: 'Open Sans Condensed', serif;
 }
 .artiste-white {
-  color: grey;
+  color: lightgrey;
+  font-family: 'Open Sans Condensed', serif;
 }
 .title {
   text-align: center;

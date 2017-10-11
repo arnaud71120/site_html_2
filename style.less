@@ -1,21 +1,24 @@
 // out: ./styles.css, sourcemap: false, compress: false
-@blue: blue;
+@blue: darkblue;
 @red: red;
-@green: green;
-@grey: grey;
+@green: darkgreen;
+@grey: lightgrey;
 @black: black;
 @white: white;
+@fontLora: 'Lora', serif;
+@fontOpen: 'Open Sans Condensed', serif;
+@fontPlayfair: 'Playfair Display', serif;
 @keyframes green-button {
   0% {background-color: @green;}
-  100% {background-color: @white;}
+  100% {background-color: @white; color: @black;}
 }
 @keyframes red-button {
   0% {background-color: @red;}
-  100% {background-color: @white;}
+  100% {background-color: @white; color: @black;}
 }
 @keyframes blue-button {
   0% {background-color: @blue;}
-  100% {background-color: @white;}
+  100% {background-color: @white; color: @black;}
 }
 @keyframes grey-button {
   0% {background-color: @grey;}
@@ -29,140 +32,252 @@
   0% {background-color: @white;}
   100% {background-color: @black; color: @white;}
 }
+
+.classhr {
+  border-top: 1px solid black;
+  width: 90%;
+  margin-top: 5%;;
+}
+.black-border {
+  border: 1px solid @black;
+}
+.red-border {
+  border: 1px solid @red;
+}
+.green-border {
+  border: 1px solid @green;
+}
+.blue-border {
+  border: 1px solid @blue;
+}
+.white-border {
+  border: 1px solid @white;
+}
+.grey-border {
+  border: 1px solid @grey;
+}
+.allArticle {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  margin-top: 15px;
+}
 .button-green {
-  width: 7%;
-  height: 5%;
+  width: 15%;
+  height: 15%;
   background-color: @green;
   border-color: @black;
   border-width: 1px;
   border-radius: 15px;
+  margin: 5%;
+  color: @white;
 }
 .button-green:hover {
   animation-name: green-button;
+  background-color: @white;
+  color: @black;
   animation-duration: 1s;
 }
 .button-black {
-  width: 7%;
-  height: 5%;
+  width: 15%;
+  height: 15%;
   background-color: @black;
   border-color: @white;
   border-width: 1px;
   color: white;
   border-radius: 15px;
+  margin: 5%;
 }
 .button-black:hover {
   animation-name: black-button;
+  background-color: @white;
+  color: @black;
   animation-duration: 1s;
 }
 .button-blue {
-  width: 7%;
-  height: 5%;
+  width: 15%;
+  height: 15%;
   background-color: @blue;
   border-color: @black;
   border-width: 1px;
   border-radius: 15px;
+  margin: 5%;
+  color: @white;
 }
 .button-blue:hover {
   animation-name: blue-button;
+  background-color: @white;
+  color: @black;
   animation-duration: 1s;
 }
 .button-red {
-  width: 7%;
-  height: 5%;
+  width: 15%;
+  height: 15%;
   background-color: @red;
   border-color: @black;
   border-width: 1px;
   border-radius: 15px;
+  margin: 5%;
+  color: @white;
 }
 .button-red:hover {
   animation-name: red-button;
+  background-color: @white;
+  color: @black;
   animation-duration: 1s;
 }
 .button-grey {
-  width: 7%;
-  height: 5%;
+  width: 15%;
+  height: 15%;
   background-color: @grey;
   border-color: @black;
   border-width: 1px;
   border-radius: 15px;
+  margin: 5%;
 }
 .button-grey:hover {
   animation-name: grey-button;
+  background-color: @white;
+  color: @black;
   animation-duration: 1s;
 }
 .button-white {
-  width: 7%;
-  height: 5%;
+  width: 15%;
+  height: 15%;
   background-color: @white;
   border-color: @black;
   border-width: 1px;
   border-radius: 15px;
+  margin: 5%;
+}
+.button-hover {
+  width: 15%;
+  height: 15%;
+  background-color: @white;
+  border-color: @black;
+  border-width: 1px;
+  border-radius: 15px;
+  margin: 5%;
+}
+.button-grey:hover {
+  animation-name: white-button;
+  background-color: @black;
+  color: @white;
+  animation-duration: 1s;
 }
 .article-body-red {
-  border: solid;
-  border-color: @red;
-  border-width: 1px;
+  .red-border;
   width: 40%;
   height: 50%;
   color: @red;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: @fontLora;
+  margin: 1%;
+  min-height: 700px;
+}
+.article-body-red img {
+  width: 70%;
+}
+.article-body-red p {
+  text-align: : center;
+  padding: 10%;
 }
 .article-body-green {
-  border: solid;
-  border-color: @green;
-  border-width: 1px;
+  .green-border;
   width: 40%;
   height: 50%;
   color: @green;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: @fontLora;
+  margin: 1%;
+  min-height: 700px;
+}
+.article-body-green img {
+  width: 70%;
+}
+.article-body-green p {
+  text-align: : center;
+  padding: 10%;
 }
 .article-body-blue {
-  border: solid;
-  border-color: @blue;
-  border-width: 1px;
+  .blue-border;
   width: 40%;
   height: 50%;
   color: @blue;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: @fontLora;
+  margin: 1%;
+  min-height: 700px;
+}
+.article-body-blue img {
+  width: 70%;
+}
+.article-body-blue p {
+  text-align: : center;
+  padding: 10%;
 }
 .article-body-grey {
-  border: solid;
-  border-color: @grey;
-  border-width: 1px;
+  .grey-border;
   width: 40%;
   height: 50%;
   color: @grey;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: @fontLora;
+  margin: 1%;
+  min-height: 700px;
+}
+.article-body-grey p {
+  text-align: : center;
+  padding: 10%;
+}
+.article-body-grey img {
+  width: 70%;
 }
 .article-body-black {
-  border: solid;
-  border-color: @black;
-  border-width: 1px;
+  .black-border;
   width: 40%;
   height: 50%;
   color: @black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: @fontLora;
+  margin: 1%;
+  min-height: 700px;
+}
+.article-body-black p {
+  text-align: : center;
+  padding: 10%;
+}
+.article-body-black img {
+  width: 70%;
 }
 .article-body-white {
-  border: solid;
-  border-color: @white;
-  border-width: 1px;
+  .white-border;
   width: 40%;
   height: 50%;
   color: @white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: @fontLora;
+  margin: 1%;
+}
+.article-body-white p {
+  text-align: : center;
+  padding: 10%;
+  min-height: 300px;
+}
+.article-body-white img {
+  width: 70%;
 }
 .article-body p {
   text-align: center;
@@ -200,6 +315,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: @fontOpen;
 }
 .menu-vertical ul li {
   list-style: none;
@@ -217,6 +333,10 @@
 }
 .menu-vertical ul li a {
   text-decoration: none;
+}
+.menu-vertical ul li:hover a {
+  background-color: @white;
+  color: @black;
 }
 .menu-vertical ul li a:visited{
 
@@ -243,7 +363,7 @@
 .color-red {
   color: @red;
 }
-.color-gree {
+.color-green {
   color: @green;
 }
 .color-blue {
@@ -294,18 +414,23 @@
 }
 .artiste-blue {
   color: @blue;
+  font-family: @fontOpen;
 }
 .artiste-red {
   color: @red;
+  font-family: @fontOpen;
 }
 .artiste-green {
   color: @green;
+  font-family: @fontOpen;
 }
 .artiste-grey {
   color: @grey;
+  font-family: @fontOpen;
 }
 .artiste-white {
   color: @grey;
+  font-family: @fontOpen;
 }
 .title{
   text-align: center;
