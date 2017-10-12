@@ -6,6 +6,7 @@
 @black: black;
 @white: white;
 @fontLora: 'Lora', serif;
+@fontBad: 'Bad Script', cursive;
 @fontOpen: 'Open Sans Condensed', serif;
 @fontPlayfair: 'Playfair Display', serif;
 
@@ -57,7 +58,9 @@
     background-color: @black; color: @white;
   }
 }
-
+.citation {
+  font-family: @fontBad;
+}
 .classhr {
   border-top: 1px solid black;
   width: 90%;
@@ -174,6 +177,9 @@
   border-width: 1px;
   border-radius: 15px;
   margin: 5%;
+}
+blockquote{
+  margin: 10%;
 }
 .button-hover {
   width: 30%;

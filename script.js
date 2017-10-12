@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+  $.get("https://breaking-bad-quotes.herokuapp.com/v1/quotes", function(data){
+    var citation = data[0].quote;
+    var autheur = data[0].author;
+    $('#quote').html('"' + citation + '"');
+    $('#autheur').html('<small>- ' + autheur + '</small>');
+  })
+
  $("#btn-menu").on('click', function() {
    $(this).siblings('#top-nav').slideToggle("slow");
    $(this).siblings('#top-nav2').slideToggle("slow");

@@ -51,6 +51,9 @@
     color: white;
   }
 }
+.citation {
+  font-family: 'Bad Script', cursive;
+}
 .classhr {
   border-top: 1px solid black;
   width: 90%;
@@ -167,6 +170,9 @@
   border-width: 1px;
   border-radius: 15px;
   margin: 5%;
+}
+blockquote {
+  margin: 10%;
 }
 .button-hover {
   width: 30%;

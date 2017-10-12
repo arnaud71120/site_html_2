@@ -100,3 +100,10 @@ Elles doivent être nommées: photo1, photo2, photo3, photo4) :
 
 Pour rendre le menu vertical rétractable, il faut ajouter en début de la balise main :
   <i id="navBar-button" class="fa fa-chevron-left fa-3x" aria-hidden="true" style="width: 100%;" ></i>
+
+Pour ajouter l'api citation breaking bad, il suffit d'ajouter :
+<blockquote>
+  <h3 class="color-red">Citation :</h3>
+  <p id="quote" class="citation color-red"></p>
+  <p id="autheur" class="color-red"></p>
+</blockquote>
