@@ -22,6 +22,12 @@ $(document).ready(function() {
    $("#article3").addClass('article-body-green bg-grey');
    $("#btn-menu").removeClass();
    $("#btn-menu").addClass('color-black');
+   $("#bouton1").removeClass();
+   $("#bouton2").removeClass();
+   $("#bouton3").removeClass();
+   $("#bouton1").addClass('button-green');
+   $("#bouton2").addClass('button-green');
+   $("#bouton3").addClass('button-green');
  });
  $("#design2").on('click', function() {
    $('#main').css("background-image", "url(./images/photo2.jpg)");
@@ -37,6 +43,12 @@ $(document).ready(function() {
    $("#article3").addClass('article-body-blue bg-grey');
    $("#btn-menu").removeClass();
    $("#btn-menu").addClass('color-black');
+   $("#bouton1").removeClass();
+   $("#bouton2").removeClass();
+   $("#bouton3").removeClass();
+   $("#bouton1").addClass('button-blue');
+   $("#bouton2").addClass('button-blue');
+   $("#bouton3").addClass('button-blue');
  });
  $("#design0").on('click', function() {
    $('#main').css("background-image", "url(./images/background.jpg)");
@@ -52,6 +64,12 @@ $(document).ready(function() {
    $("#article3").addClass('article-body-green bg-grey');
    $("#btn-menu").removeClass();
    $("#btn-menu").addClass('color-white');
+   $("#bouton1").removeClass();
+   $("#bouton2").removeClass();
+   $("#bouton3").removeClass();
+   $("#bouton1").addClass('button-blue');
+   $("#bouton2").addClass('button-red');
+   $("#bouton3").addClass('button-green');
  });
 
  $("#navBar-button").on('click', function() {

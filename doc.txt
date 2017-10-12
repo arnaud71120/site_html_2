@@ -1,5 +1,4 @@
 Pour ajouter un menu vertical :
-<aside id="navBar" class="menu-vertical bg-black">
   <h2 class="artiste-red">Nom de l'artiste</h2><br />
   <img src="./visage.jpg" alt="portrait"/>
   <ul id="top-nav">
@@ -8,13 +7,12 @@ Pour ajouter un menu vertical :
     <li><a class="color-red" href="#" >MES TARIFS</a></li>
     <li><a class="color-red" href="#" >CONTACT</a></li>
   </ul>
-</aside>
 Pour avoir un changement de desgin simple, vous devez rajouter après la dernère balise </ul> :
 <ul id="top-nav2">
   <li id="design1" class="color-red">Design 1</li>
   <li id="design2" class="color-red">Desgin 2</li>
   <li id="design0" class="color-red">Restaure desgin</li>
-</ul> 
+</ul>
 Pour modifier l'image du menu, vous devez ajouter dans le dossier images, une image nommé visage.jpg
 Pour rendre le menu déroulant :
 Ajouter dans la balise aside
@@ -71,12 +69,12 @@ Pour un bouton blanc :
 <button class="button-white">Bouton</button>
 
 Pour ajouter un article, il faut mettre dans la div allArticle :
-<article class="article-body-blue bg-grey">
+<article id="article1" class="article-body-blue bg-grey">
   <h2 class="title-article">MON TITRE</h2>
   <img src="./images/photo1.jpg" alt="image1"/>
   <hr class="classhr">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <button class="button-blue">Bouton</button>
+  <p>TEXTE A RENSEIGNER</p>
+  <button id="bouton1" class="button-blue">Bouton</button>
 </article>
 Pour un article rouge, il faut utiliser ce paramètre :
 <article class="article-body-red bg-grey">
