@@ -9,6 +9,12 @@ Pour ajouter un menu vertical :
     <li><a class="color-red" href="#" >CONTACT</a></li>
   </ul>
 </aside>
+Pour avoir un changement de desgin simple, vous devez rajouter après la dernère balise </ul> :
+<ul id="top-nav2">
+  <li id="design1" class="color-red">Design 1</li>
+  <li id="design2" class="color-red">Desgin 2</li>
+  <li id="design0" class="color-red">Restaure desgin</li>
+</ul> 
 Pour modifier l'image du menu, vous devez ajouter dans le dossier images, une image nommé visage.jpg
 Pour rendre le menu déroulant :
 Ajouter dans la balise aside

@@ -1,6 +1,47 @@
 $(document).ready(function() {
  $("#btn-menu").on('click', function() {
    $(this).siblings('#top-nav').slideToggle("slow");
+   $(this).siblings('#top-nav2').slideToggle("slow");
+ });
+ $("#design1").on('click', function() {
+   $('#main').css("background-image", "url(./images/photo1.jpg)");
+   $('#main').css("border-top", "1px solid black");
+   $("#navBar").removeClass();
+   $("#navBar").addClass('menu-vertical bg-white');
+   $("#article1").removeClass();
+   $("#article2").removeClass();
+   $("#article3").removeClass();
+   $("#article1").addClass('article-body-green bg-grey');
+   $("#article2").addClass('article-body-green bg-grey');
+   $("#article3").addClass('article-body-green bg-grey');
+   $("#btn-menu").removeClass();
+   $("#btn-menu").addClass('color-black');
+ });
+ $("#design2").on('click', function() {
+   $('#main').css("background-image", "url(./images/photo2.jpg)");
+   $("#navBar").removeClass();
+   $("#navBar").addClass('menu-vertical bg-blue');
+   $("#article1").removeClass();
+   $("#article2").removeClass();
+   $("#article3").removeClass();
+   $("#article1").addClass('article-body-blue bg-grey');
+   $("#article2").addClass('article-body-blue bg-grey');
+   $("#article3").addClass('article-body-blue bg-grey');
+   $("#btn-menu").removeClass();
+   $("#btn-menu").addClass('color-black');
+ });
+ $("#design0").on('click', function() {
+   $('#main').css("background-image", "url(./images/background.jpg)");
+   $("#navBar").removeClass();
+   $("#navBar").addClass('menu-vertical bg-black');
+   $("#article1").removeClass();
+   $("#article2").removeClass();
+   $("#article3").removeClass();
+   $("#article1").addClass('article-body-blue bg-grey');
+   $("#article2").addClass('article-body-red bg-grey');
+   $("#article3").addClass('article-body-green bg-grey');
+   $("#btn-menu").removeClass();
+   $("#btn-menu").addClass('color-white');
  });
 
  $("#navBar-button").on('click', function() {
