@@ -1,0 +1,13 @@
+ - si le site n'a pas d éléments pour remplir la page la photo s'arrête a auteur du dernier éléments.
+ - idem pour le aside
+Réponse => Résolu en mettant un min-height: 100vh;
+ - les btn ajouter dans le aside ne changent pas de couleur et donc ne sont plus visible sous certains themes/
+ Réponse => il suffit de changer la class du bouton pas la couleur souhaiter. Les désign étant prédéfini, il faut faire attention a la couleur du bouton choisi
+
+ -Le bouton pour retracter le menu dans le aside n est pas a proximité du menu rétractable.
+Réponse => Ceci est un choix que je trouvais pertinent pour le design
+-les article se stack les 1 a coté des autres et donc possède peut de place au bout de 4/5 itérations.
+  peut etre les faire passé les un en dessous des autres.
+Réponse => Resolu avec les flex-wrap
+-il n'y a aps d'instruction pou placer le slide dans le skelette (localisation).
+Réponse => Documentation corrigé

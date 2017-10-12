@@ -54,7 +54,7 @@ bg-size-medium
 Pour une taille petite
 bg-size-small
 
-Pour ajouter un bouton:
+Pour ajouter un bouton(attention au bouton en cas de changement de design):
 Pour un bouton rouge :
 <button class="button-red">Bouton</button>
 Pour un bouton noir :
@@ -88,7 +88,7 @@ Pour un article bleu, il faut utiliser ce paramètre :
 <article class="article-body-blue bg-grey">
 
 Pour ajouter un slider, il faut ajouter (attention, il faut qu'elle contiennent 4 photos dans le dossier images.
-Elles doivent être nommées: photo1, photo2, photo3, photo4) :
+Elles doivent être nommées: photo1, photo2, photo3, photo4) A mettre n'importe ou dans la balise article du main:
 <div class="slider">
    <i id="navSlide-button-left" class="fa fa-chevron-left fa-3x" aria-hidden="true" style="width: 100%;" ></i>
   <img id="photo1" alt="photo1" class="noHidden" src="./images/photo1.jpg" />
