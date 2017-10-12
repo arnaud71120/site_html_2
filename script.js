@@ -2,6 +2,11 @@ $(document).ready(function() {
  $("#btn-menu").on('click', function() {
    $(this).siblings('#top-nav').slideToggle("slow");
    $(this).siblings('#top-nav2').slideToggle("slow");
+   if($('#btn-menu').html() == "Ouvrir le menu déroulant"){
+     $('#btn-menu').html("Fermer le menu déroulant");
+   } else {
+     $('#btn-menu').html("Ouvrir le menu déroulant");
+   }
  });
  $("#design1").on('click', function() {
    $('#main').css("background-image", "url(./images/photo1.jpg)");
