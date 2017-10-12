@@ -18,10 +18,12 @@ $(document).ready(function() {
  });
  $("#design1").on('click', function() {
    $('#main').css("background-image", "url(./images/photo1.jpg)");
-   $('#top-nav').css("border-top", "1px solid black");
-   $('#top-nav2').css("border-top", "1px solid black");
+   $('#top-nav').css("border-top", "1px solid white");
+   $('#top-nav2').css("border-top", "1px solid white");
    $("#navBar").removeClass();
-   $("#navBar").addClass('menu-vertical bg-white');
+   $("#navBar").addClass('menu-vertical bg-black');
+   $("#bio").removeClass();
+   $("#bio").addClass('color-blue');
    $("#article1").removeClass();
    $("#article2").removeClass();
    $("#article3").removeClass();
@@ -29,7 +31,7 @@ $(document).ready(function() {
    $("#article2").addClass('article-body-green bg-grey');
    $("#article3").addClass('article-body-green bg-grey');
    $("#btn-menu").removeClass();
-   $("#btn-menu").addClass('color-black');
+   $("#btn-menu").addClass('color-white');
    $("#bouton1").removeClass();
    $("#bouton2").removeClass();
    $("#bouton3").removeClass();
@@ -39,10 +41,12 @@ $(document).ready(function() {
  });
  $("#design2").on('click', function() {
    $('#main').css("background-image", "url(./images/photo2.jpg)");
-   $('#top-nav').css("border-top", "1px solid white");
-   $('#top-nav2').css("border-top", "1px solid white")
+   $('#top-nav').css("border-top", "1px solid black");
+   $('#top-nav2').css("border-top", "1px solid black")
    $("#navBar").removeClass();
    $("#navBar").addClass('menu-vertical bg-blue');
+   $("#bio").removeClass();
+   $("#bio").addClass('color-white');
    $("#article1").removeClass();
    $("#article2").removeClass();
    $("#article3").removeClass();
@@ -60,10 +64,12 @@ $(document).ready(function() {
  });
  $("#design0").on('click', function() {
    $('#main').css("background-image", "url(./images/background.jpg)");
-   $('#top-nav').css("border-top", "1px solid white");
-   $('#top-nav2').css("border-top", "1px solid white")
+   $('#top-nav').css("border-top", "1px solid black");
+   $('#top-nav2').css("border-top", "1px solid black")
+   $("#bio").removeClass();
+   $("#bio").addClass('color-black');
    $("#navBar").removeClass();
-   $("#navBar").addClass('menu-vertical bg-black');
+   $("#navBar").addClass('menu-vertical bg-white');
    $("#article1").removeClass();
    $("#article2").removeClass();
    $("#article3").removeClass();
@@ -71,7 +77,7 @@ $(document).ready(function() {
    $("#article2").addClass('article-body-red bg-grey');
    $("#article3").addClass('article-body-green bg-grey');
    $("#btn-menu").removeClass();
-   $("#btn-menu").addClass('color-white');
+   $("#btn-menu").addClass('color-black');
    $("#bouton1").removeClass();
    $("#bouton2").removeClass();
    $("#bouton3").removeClass();
