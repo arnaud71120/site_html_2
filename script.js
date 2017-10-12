@@ -5,7 +5,8 @@ $(document).ready(function() {
  });
  $("#design1").on('click', function() {
    $('#main').css("background-image", "url(./images/photo1.jpg)");
-   $('#main').css("border-top", "1px solid black");
+   $('#top-nav').css("border-top", "1px solid black");
+   $('#top-nav2').css("border-top", "1px solid black");
    $("#navBar").removeClass();
    $("#navBar").addClass('menu-vertical bg-white');
    $("#article1").removeClass();
@@ -19,6 +20,8 @@ $(document).ready(function() {
  });
  $("#design2").on('click', function() {
    $('#main').css("background-image", "url(./images/photo2.jpg)");
+   $('#top-nav').css("border-top", "1px solid white");
+   $('#top-nav2').css("border-top", "1px solid white")
    $("#navBar").removeClass();
    $("#navBar").addClass('menu-vertical bg-blue');
    $("#article1").removeClass();
@@ -32,6 +35,8 @@ $(document).ready(function() {
  });
  $("#design0").on('click', function() {
    $('#main').css("background-image", "url(./images/background.jpg)");
+   $('#top-nav').css("border-top", "1px solid white");
+   $('#top-nav2').css("border-top", "1px solid white")
    $("#navBar").removeClass();
    $("#navBar").addClass('menu-vertical bg-black');
    $("#article1").removeClass();
